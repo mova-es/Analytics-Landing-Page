@@ -28,3 +28,20 @@ const closeEl = document.querySelector('.close');
 closeEl.addEventListener('click', function (e) {
   menuEl.classList.remove('show')
 });
+
+const formEl = document.querySelector('.companies__stars-form');
+const buttonEls = document.querySelectorAll('.rating_sign_input');
+
+buttonEls.forEach((radio) => {
+  radio.addEventListener('change', function () {
+    const checkedNumber = document.querySelector('.rating_sign_input:checked').value || undefined;
+    buttonEls.forEach((item) => {
+      const currentLabel = item.previousElementSibling;
+      if(item.value <= checkedNumber) {
+        currentLabel.classList.add('check');
+      } else {
+        currentLabel.classList.remove('check');
+      }
+    });
+  });
+})
