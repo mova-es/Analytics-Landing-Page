@@ -42,6 +42,8 @@ buttonEls.forEach((radio) => {
       } else {
         currentLabel.classList.remove('check');
       }
+      
     });
+    alert('Спасибо за оценку!')
   });
 })

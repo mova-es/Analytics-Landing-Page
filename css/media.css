@@ -1,3 +1,79 @@
+@media (max-width: 1024px) {
+  .container {
+    margin: 0;
+    padding: 0 20px;
+}
+.header__top {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header__row {
+  padding-left: 20px;
+}
+
+.header__logo__menu {
+  gap: 30px;
+}
+.menu__list {
+  gap: 20px;
+}
+.sign__up-btn {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.sign {
+  gap: 20px;
+}
+.automated__row {
+  flex-wrap: wrap;
+}
+.automated__row:nth-child(even) {
+  flex-direction: row;
+}
+
+.automated__column {
+  width: 100%;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+.price__card {
+  gap: 10px;
+  overflow-x: scroll;
+}
+
+.price__card::-webkit-scrollbar {
+  width: 30px; 
+  height: 5px; 
+  background: none;
+}
+
+.price__card::-webkit-scrollbar-thumb {
+  background-color: #2a407c;
+  border-radius: 3px;
+}
+
+.companies__column--mini-size {
+  max-width: 360px;
+}
+.companies__title {
+  font-size: 28px;
+  text-align: center;
+}
+
+.companies__column-inner {
+  padding: 32px 30px;
+  max-width: 400px;
+}
+.companies__row {
+  column-gap: 30px;
+}
+.companies__column {
+  width: 50%;
+}}
+
 @media (max-width: 767px) {
   .logo__img {
     height: 30px;
@@ -240,12 +316,11 @@
   }
 
   .price__card::-webkit-scrollbar {
-    width: 30px; /* ширина для вертикального скролла */
-    height: 5px; /* высота для горизонтального скролла */
+    width: 30px; 
+    height: 5px; 
     background: none;
   }
 
-  /* ползунок скроллбара */
   .price__card::-webkit-scrollbar-thumb {
     background-color: #2a407c;
     border-radius: 3px;
